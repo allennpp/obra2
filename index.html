@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obra2</title>
+
+</head>
+<body>
+    <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
+
+  </head>
+
+  <a-assets>
+    <img id="fede1" src="./fede1.jpg">
+    <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+    <a-assets-item id="rivot" src="./rivot.gltf"></a-assets-item>
+
+</a-assets>
+
+  <body>
+    <a-scene>
+        
+
+      <a-plane position="0 0 -5.060" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+      <a-sky color="#purple"></a-sky>
+      <a-image src= "#fede1" material="side: double; alphatest: 0.5s" scale= "10 10 10" position="10.004 5.012 -10.126" rotation= "0.00  90.00  0.00"></a-image>
+      <a-image src= "#fede1" material="side: double; alphatest: 0.5s" scale= "10 10 10" position="-10.190 4.859 -10.974" rotation= "0.00  992.250  0.00"></a-image>
+      <a-entity gltf-model="#rivot" position="0.943 0.015-4.382" animation= "property: rotation; to: 0  360  0; loop: true;  dur: 5000" scale="50  50  50"></a-entity> 
+      <a-entity position= "-8.000  12.370 -15.247" text-geometry="value: Quiero ser Federico D(i)az-Granados;font: #optimerBoldFont" material= "shader: flat; color: #000000;"></a-entity>
+      <a-entity position= "-8.000  11.370 -15.247" text-geometry="value: y que chicas lindas me digan 'Fede';font: #optimerBoldFont" material= "shader: flat; color: #000000;"></a-entity>
+      <a-entity position= "-8.000  9.370  -15.247" text-geometry="value: Quiero tambi(e)n ser el (u)ltimo hombre sobre la tierra" material= "shader: flat; color: #000000;"></a-entity>
+      <a-entity position= "-8.000  8.370  -15.247" text-geometry="value: heredar el oficio de mi padre " material= "shader: flat; color: #000000;"></a-entity>
+      <a-entity position= "-8.000  7.370  -15.247" text-geometry="value: seguir las bandadas " material= "shader: flat; color: #000000;"></a-entity>
+      <a-entity position= "-8.000  5.370  -15.247" text-geometry="value: Abrazar las llagas mis suelos " material= "shader: flat; color: #000000;"></a-entity>
+      <a-entity position= "-8.000  4.370  -15.247" text-geometry="value: vivir la vida que tengo derecho a perder " material= "shader: flat; color: #000000;"></a-entity>
+      <a-entity position= "-8.000  2.370  -15.247" text-geometry="value: Quiero saber d(o)nde caen las mirlas" material= "shader: flat; color: #000000;"></a-entity>
+      <a-entity position= "-8.000  1.370  -15.247" text-geometry="value: que confundidas cantan al atardecer " material= "shader: flat; color: #000000;"></a-entity>
+
+
+
+
+    </a-scene>
+  </body>
+</body>
+</html>
